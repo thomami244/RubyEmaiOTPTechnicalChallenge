@@ -9,7 +9,7 @@ class Email_OTP_Module
   def start
   # tests if the email address includes @gmail.com
     if @user_email.match?(/@gmail.com/)
-      puts "We have sent you another OTP"
+      puts "We have sent you an OTP"
       @number_of_login_tries = 10
       send_email(@user_email)
     else
@@ -50,7 +50,7 @@ class Email_OTP_Module
 
 
     # The loop continues until the user logs in 10 times
-    while @running = true
+    while true
 
     # The loop continues until  60 seconds are used up
       if @time_left_in_seconds <= 0
