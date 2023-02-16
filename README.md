@@ -1,4 +1,4 @@
-# RubyEmaiOTPTechnicalChallenge
+# RubyEmailOTPTechnicalChallenge
 This is a response to a technical challenge to implement an email OTP module to be used for an enterprise application. 
 
 I could use any language, and chose to use Ruby due to development speed under a tight deadline.
@@ -7,6 +7,9 @@ In order to exectute the file using the command line:
 1. Save the file to your local hard disk
 2. Download Ruby compiler 
 3. Execute the file by typing "ruby [path of the file on your local hard disk]"
+
+* note that this program does not send emails, which is assumed to be done in another enterprise module. This module is solely responsible for generating and testing an OTP sent by email.
+
 
 Features:
 - A random 6 digit OTP is sent to a user that enters a "@gmail.com" email account (you can change the email required in the regex statement)
